@@ -1,5 +1,5 @@
 import numpy as np
-import BadParameterError
+#import BadParameterError
 
 class PyMultiMap:
     
@@ -20,10 +20,16 @@ class PyMultiMap:
         self.sizeOfMulitMap = self.sizeOfMulitMap + 1
 
     def get(self,key):
-        return self.classdict[key]
+        try:
+            return self.classdict[key]
+        except KeyError:
+            return None
 
     def getAsAList(self,key):
-        return self.classdict[key].tolist()
+        try:
+            return self.classdict[key].tolist()
+        except KeyError:
+            return None
 
     def update(self,key,values):
         if isinstance(values,list) == False and isinstance(values,np.ndarray) == False:
@@ -48,4 +54,5 @@ class PyMultiMap:
         return self.sizeOfMulitMap
     
     def clear(self):
+        self.sizeOfMulitMap = 0
         self.classdict.clear()

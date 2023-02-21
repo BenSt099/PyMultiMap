@@ -1,5 +1,4 @@
 import numpy as np
-#import BadParameterError
 
 class PyMultiMap:
     
@@ -12,7 +11,7 @@ class PyMultiMap:
 
     def put(self,key,values):
         if isinstance(values,list) == False and isinstance(values,np.ndarray) == False:
-           raise Exception("Values have to be in a List Or an NumPy-Array!") #BadParameterError("Second parameter has to be a list or a numpy-array !")  
+           raise ValueError("Values have to be in a List Or an NumPy-Array!")  
         if isinstance(values,np.ndarray):
             self.classdict[key] = values 
         else:
@@ -43,6 +42,8 @@ class PyMultiMap:
         return self.classdict.copy()
 
     def keys(self):
+        if self.size() == 0:
+            return None
         return self.classdict.keys()
 
     def remove(self, key):

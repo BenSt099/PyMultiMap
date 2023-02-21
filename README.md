@@ -19,6 +19,8 @@ Implementation of a MultiMap in Python.
 
 - Python library `numpy` [ [Installation](https://numpy.org/install/) ]
 
+- Python library `pytest` [ [Installation](https://docs.pytest.org/en/latest/getting-started.html#get-started) ] (Only Needed For Development)
+
 ## Getting Started
 
 - Still in production

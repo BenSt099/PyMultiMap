@@ -1,5 +1,9 @@
-from main.PyMultiMap import * 
+import sys
 import pytest
+ 
+sys.path.append('../src/')
+
+from main.PyMultiMap import * 
 
 def test_0101():
     pmmobj = PyMultiMap()

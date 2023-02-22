@@ -44,6 +44,8 @@ copy()
 
 keys()
 
+values()
+
 remove(key)
 
 size()

@@ -46,6 +46,11 @@ class PyMultiMap:
             return None
         return self.classdict.keys()
 
+    def values(self):
+        if self.size() == 0:
+            return None
+        return self.classdict.values()
+
     def remove(self, key):
         self.classdict.pop(key)
         if len(self.classdict) >= 1:

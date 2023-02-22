@@ -2,7 +2,7 @@
 
 ![](https://img.shields.io/badge/License-GPL%20v3.0-red)
 ![](https://img.shields.io/badge/Version-v1.0-yellow)
-[![Python package](https://github.com/BenSt099/PyMultiMap/actions/workflows/main.yml/badge.svg)](https://github.com/BenSt099/PyMultiMap/actions/workflows/main.yml)
+[![Python Tests](https://github.com/BenSt099/PyMultiMap/actions/workflows/main.yml/badge.svg)](https://github.com/BenSt099/PyMultiMap/actions/workflows/main.yml)
 ![](https://img.shields.io/badge/lang-242663?style=flat&logo=Python)
 ![](https://img.shields.io/badge/PyMultiMap-47bfd1?style=flat&logo=Git-Extensions)
 

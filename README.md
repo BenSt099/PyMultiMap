@@ -30,7 +30,7 @@ Implementation of a MultiMap in Python.
 
 The following methods are provided:
 
-```bash
+```python
 
 put(key,values)
 

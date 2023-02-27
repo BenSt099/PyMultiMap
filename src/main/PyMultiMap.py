@@ -4,7 +4,6 @@ class PyMultiMap:
     
     def __init__(self):
         self.classdict = {}
-        self.sizeOfMulitMap = 0
 
     def __str__(self):
         return  f"{self.classdict}" 
@@ -16,7 +15,6 @@ class PyMultiMap:
             self.classdict[key] = values 
         else:
             self.classdict[key] = np.array(values)  
-        self.sizeOfMulitMap = self.sizeOfMulitMap + 1
 
     def get(self,key):
         try:
@@ -53,12 +51,9 @@ class PyMultiMap:
 
     def remove(self, key):
         self.classdict.pop(key)
-        if len(self.classdict) >= 1:
-            self.sizeOfMulitMap = self.sizeOfMulitMap - 1
 
     def size(self):
-        return self.sizeOfMulitMap
+        return len(self.classdict)
     
     def clear(self):
-        self.sizeOfMulitMap = 0
         self.classdict.clear()

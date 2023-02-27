@@ -40,3 +40,9 @@ def test_0206():
     pmmobj = PyMultiMap()
     pmmobj.put("key1",[1,2,3])
     assert pmmobj.get("key2") == None
+
+def test_0207():
+    pmmobj = PyMultiMap()
+    pmmobj.put("key1",[1,2,3])
+    pmmobj.put("key1",[1,2,3])
+    assert pmmobj.size() == 1
